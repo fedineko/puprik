@@ -1,0 +1,19 @@
+[package]
+name = "puprik"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.22.0"
+ecdsa = "0.16.9"
+ed25519 = "2.2.3"
+ed25519-dalek = { version = "2.1.1", features = ["pem"] }
+hex = "0.4.3"
+hmac = "0.12.1"
+log = "0.4.20"
+p256 = { version = "0.13.2", features = ["ecdsa-core"] }
+rand = "0.8.5"
+rsa = { version = "0.9.6", features = ["sha2"] }
+sha2 = "0.11.0-pre.1"
